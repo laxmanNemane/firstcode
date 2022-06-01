@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Gym Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-image: url("https://i.ytimg.com/vi/gey73xiS8F4/maxresdefault.jpg");
+            width: 100%;
+            height: 850px;
+            /* opacity: 0.6; */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .left {
+            /* border: 2px solid rgb(103, 231, 103); */
+            color: white;
+            width: 10%;
+            position: absolute;
+            top: 15px;
+            left: 34px;
+
+        }
+
+        .mid {
+            /* border: 2px solid rgb(28, 11, 180); */
+            color: white;
+            position: relative;
+            width: 60%;
+            margin: auto;
+            position: absolute;
+            left: 30%;
+            top: 28px;
+
+        }
+
+        .right {
+            /* border: 2px solid rgb(188, 207, 14); */
+            color: white;
+            position: absolute;
+            right: 34px;
+            top: 22px;
+        }
+
+        ul li {
+            display: inline;
+            font-size: 25px;
+            margin: 10px 10px;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 7px;
+            border-radius: 10px;
+        }
+
+        ul li a:hover {
+            color: rgb(24, 165, 6);
+            background-color: white;
+            padding: 5px 7px;
+            text-decoration: none;
+        }
+
+        img {
+            width: 63px;
+            height: 63px;
+            border-radius: 50%;
+        }
+
+        .btn {
+            border: 2px solid black;
+            margin: 5px 5px;
+            padding: 8px 14px;
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            background-color: aqua;
+            cursor: pointer;
+        }
+
+        .body {
+            width: 30%;
+            height: 35%;
+            position: absolute;
+            top: 180px;
+            left: 95px;
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        input {
+            width: 80%;
+            padding: 5px 5px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="https://w7.pngwing.com/pngs/255/630/png-transparent-gold-s-gym-fitness-centre-bench-physical-fitness-gym-miscellaneous-logo-sign-thumbnail.png"
+                alt="">
+        </div>
+        <div class="mid">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Fiteness Calculator</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">prime</button>
+            <button class="btn">Right Now</button>
+        </div>
+    </header>
+
+    <div class="body">
+        <h2>Hurry Up</h2><br>
+        <input type="text" placeholder="Enter your Name here"><br>
+        <input type="email" placeholder="Enter your email here"><br>
+        <input type="number" placeholder="Enter your Contact here">
+        <input type="submit" style="margin-top: 10px; width:20%;" placeholder="Submit">
+    </div>
+</body>
+
+</html>
